@@ -16,65 +16,26 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
     
-    <style>
-        body {
-            background-color: #2D3E40;
-            color: #E4F2E7;
-            font-family: Arial, sans-serif;
-        }
-        .navbar-custom {
-            background-color: #387373;
-            padding: 10px 20px;
-        }
-        .portfolio-container {
-            background-color: #93BFB7;
-            padding: 30px;
-            border-radius: 8px;
-            margin-top: 20px;
-            color: #2D3E40;
-        }
-        .carousel-item img {
-            width: 75%;
-            height: auto;
-            border-radius: 8px;
-            margin: 0 auto;
-        }
-        .carousel-caption {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .navbar-brand img {
-            max-height: 40px;
-            width: auto;
-        }
-        .nav-link {
-            color: #E4F2E7 !important;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            filter: invert(1);
-        }
-    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <header class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Logo">
+                <img src="images/logo.png" alt="Logo" style="max-height: 40px;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <nav class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="portfolio.html">Portfolio</a>
-                    </li>                    
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="contact.html">Contact</a>
                     </li>
@@ -84,70 +45,82 @@
                         <a class="nav-link" href="#" style="color: #ffffff;">Sign In</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <div class="container my-5 portfolio-container">
-        <h2 class="text-center mb-4">Mijn Projecten</h2>
-        <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="project.html">
-                        <img src="images/1.png" class="d-block" alt="Data Center">
+    <main class="container">
+        <hr>
+        <div class="row g-4">
+ 
+            <div class="col-md-4">
+                <div class="card project-card text-center">
+                    <a href="datacenter.html" style="display: inline-block;">
+                        <img src="images/1.png" alt="Data Center" class="card-img-top">
                     </a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Data Center</h5>
-                        <p>Ons beveiligd datacenter biedt optimale beveiliging en betrouwbaarheid met 24/7 toegangscontrole, bewaking en redundante systemen voor stroom en koeling.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/3.png" class="d-block" alt="Network Architecture">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Network Architecture</h5>
-                        <p>Onze netwerkarchitectuur is ontworpen voor hoge betrouwbaarheid en prestaties.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/2.png" class="d-block" alt="Security Monitoring">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Security Monitoring</h5>
-                        <p>Ons Security Monitoring-systeem biedt 24/7 toezicht op netwerkactiviteiten om bedreigingen snel te detecteren en te neutraliseren.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/4.png" class="d-block" alt="Security Monitoring">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Cloud Security Implementation</h5>
-                        <p>Dit project focust op de opzet van beveiligingsprotocollen voor cloud-omgevingen, inclusief toegang, data-encryptie, en firewall-beheer voor cloud-netwerken.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/5.png" class="d-block" alt="Security Monitoring">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>IoT Network Management</h5>
-                        <p>Beheer van een netwerk van Internet of Things (IoT)-apparaten, met focus op netwerkmonitoring, beveiliging van verbindingen, en data-analyse.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/6.png" class="d-block" alt="Security Monitoring">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Virtual Private Network (VPN) Setup</h5>
-                        <p>Creëer een VPN-oplossing voor bedrijven, gericht op veilige verbindingen en versleuteling voor gebruikers die op afstand toegang hebben tot het interne netwerk.</p>
+                    <div class="card-body">
+                        <h5 class="card-title">Data Center</h5>
+                        <p class="card-text">Ons beveiligd datacenter biedt optimale beveiliging en betrouwbaarheid met 24/7 toegangscontrole, bewaking en redundante systemen voor stroom en koeling.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
 
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/2.png" alt="Security Monitoring">
+                    <div class="card-body">
+                        <h5 class="card-title">Security Monitoring</h5>
+                        <p class="card-text">Ons Security Monitoring-systeem biedt 24/7 toezicht op netwerkactiviteiten om bedreigingen snel te detecteren en te neutraliseren.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/3.png" alt="Network Architecture">
+                    <div class="card-body">
+                        <h5 class="card-title">Network Architecture</h5>
+                        <p class="card-text">Onze netwerkarchitectuur is ontworpen voor hoge betrouwbaarheid en prestaties.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/4.png" alt="Cloud Security Implementation">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Security Implementation</h5>
+                        <p class="card-text">Dit project focust op de opzet van beveiligingsprotocollen voor cloud-omgevingen, inclusief toegang, data-encryptie, en firewall-beheer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/5.png" alt="IoT Network Management">
+                    <div class="card-body">
+                        <h5 class="card-title">IoT Network Management</h5>
+                        <p class="card-text">Beheer van een netwerk van IoT-apparaten, met focus op netwerkmonitoring, beveiliging van verbindingen en data-analyse.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/6.png" alt="VPN Setup">
+                    <div class="card-body">
+                        <h5 class="card-title">VPN Setup</h5>
+                        <p class="card-text">Creëer een VPN-oplossing voor bedrijven, gericht op veilige verbindingen en versleuteling voor gebruikers die op afstand toegang hebben.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <hr>
+    </main>
+
+    <footer>
+        &copy; 2024 Khaled's Portfolio. All rights reserved.
+    </footer>
 </body>
 
 </html>

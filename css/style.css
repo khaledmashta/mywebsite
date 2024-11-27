@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #2D3E40;
+    color: #E4F2E7;
+    font-family: Arial, sans-serif;
+}
+
+.profile-img {
+    max-width: 100%;
+    border: 5px solid #387373;
+    border-radius: 8px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.navbar-custom {
+    background-color: #387373;
+    padding: 10px 20px;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #E4F2E7 !important;
+}
+
+body {
+    background-color: #2D3E40;
+    color: #E4F2E7;
+}
+
+.portfolio-container {
+    background-color: #93BFB7;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #2D3E40;
+}
+
+.content-section {
+    background-color: #E4F2E7;
+    color: #2D3E40;
+    padding: 20px;
+    border-radius: 8px;
+}
+.content-container {
+    background-color: #93BFB7;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #2D3E40;
+}
+
+.project-header img {
+    width: 100%;
+    max-width: 600px; /* Beperk de maximale breedte */
+    height: auto;
+    border-radius: 8px;
+}
+
+.btn-custom {
+    background-color: #387373;
+    color: #E4F2E7;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #2D3E40;
+    color: #E4F2E7;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: #E4F2E7 !important;
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: #E4F2E7;
+}
+
+.contact-container {
+    background-color: #93BFB7;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #2D3E40;
+}
+
+.form-label {
+    color: #2D3E40;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.form-control, .btn-custom {
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #387373;
+}
+
+footer {
+    background-color: #387373;
+    color: #E4F2E7;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}

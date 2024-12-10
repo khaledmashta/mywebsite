@@ -61,15 +61,29 @@ body {
 }
 .content-container {
     background-color: #93BFB7;
-    padding: 40px;
+    position: relative;
+    z-index: 10;
+    padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
     color: #2D3E40;
 }
 
+#map {
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 20px;
+    z-index: 0;
+}
+
 .project-header img {
     width: 100%;
-    max-width: 600px; /* Beperk de maximale breedte */
+    max-width: 600px;
     height: auto;
     border-radius: 8px;
 }

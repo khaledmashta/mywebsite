@@ -1,51 +1,44 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-body {
     display: flex;
     flex-direction: column;
     background-color: #2D3E40;
     color: #E4F2E7;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+main { flex: 1; }
+
+footer {
+    background-color: #387373;
+    color: #E4F2E7;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom { background-color: #387373; padding: 10px 20px; border-bottom: 3px solid #93BFB7; }
+.navbar-brand img { max-height: 50px; }
+.navbar-nav .nav-link {
+    color: #E4F2E7 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-custom .navbar-toggler { border-color: #E4F2E7; }
 
 .profile-img {
     max-width: 100%;
     border: 5px solid #387373;
-    border-radius: 8px;
+    border-radius: 50%;
+    transition: transform 0.3s;
 }
+.profile-img:hover { transform: scale(1.05); }
 
-main {
-    flex: 1;
-}
-
-footer {
-    margin-top: auto;
-}
-
-.navbar-custom {
-    background-color: #387373;
-    padding: 10px 20px;
-}
-
-.navbar-brand img {
-    max-height: 40px;
-    width: auto;
-}
-
-.navbar-nav .nav-link {
-    color: #E4F2E7 !important;
-}
-
-body {
-    background-color: #2D3E40;
-    color: #E4F2E7;
-}
-
-.portfolio-container {
+.content-container, .portfolio-container, .contact-container, .content-section {
     background-color: #93BFB7;
     padding: 30px;
     border-radius: 8px;
@@ -53,21 +46,35 @@ body {
     color: #2D3E40;
 }
 
+.content-container { position: relative; z-index: 10; }
 .content-section {
-    background-color: #E4F2E7;
-    color: #2D3E40;
-    padding: 20px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #93BFB7, #387373);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.content-container {
-    background-color: #93BFB7;
-    position: relative;
-    z-index: 10;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    color: #2D3E40;
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E4F2E7;
+    margin-bottom: 20px;
 }
+
+.form-label { color: #2D3E40; }
+.form-control, .btn-custom {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.form-control:focus { border-color: #387373; }
+.btn-custom {
+    background-color: #387373;
+    color: #E4F2E7;
+    text-transform: uppercase;
+    border: none;
+}
+
+.btn-custom:hover { background-color: #2D3E40; }
 
 #map {
     height: 400px;
@@ -76,77 +83,13 @@ body {
     margin: 20px auto;
     border: 1px solid #ddd;
     border-radius: 8px;
-    position: relative;
-    margin-top: 20px;
-    z-index: 0;
 }
 
-.project-header img {
+.project-header img, .carousel-item img {
     width: 100%;
     max-width: 600px;
     height: auto;
     border-radius: 8px;
-}
-
-.btn-custom {
-    background-color: #387373;
-    color: #E4F2E7;
-    border-radius: 5px;
-}
-
-.btn-custom:hover {
-    background-color: #2D3E40;
-    color: #E4F2E7;
-}
-
-.form-control {
-    border-radius: 5px;
-}
-
-.navbar-nav .nav-link {
-    color: #E4F2E7 !important;
-}
-
-.navbar-custom .navbar-toggler {
-    border-color: #E4F2E7;
-}
-
-.contact-container {
-    background-color: #93BFB7;
-    padding: 30px;
-    border-radius: 8px;
-    margin-top: 20px;
-    color: #2D3E40;
-}
-
-.form-label {
-    color: #2D3E40;
-}
-
-.form-control {
-    border-radius: 5px;
-}
-
-.form-control, .btn-custom {
-    border-radius: 5px;
-}
-
-.form-control:focus {
-    border-color: #387373;
-}
-
-footer {
-    background-color: #387373;
-    color: #E4F2E7;
-    padding: 10px;
-    text-align: center;
-}
-
-.carousel-item img {
-    width: 75%;
-    height: auto;
-    border-radius: 8px;
-    margin: 0 auto;
 }
 
 .carousel-caption {
@@ -155,7 +98,7 @@ footer {
     border-radius: 5px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1);
+.navbar-nav .nav-link:hover, .btn-custom:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
